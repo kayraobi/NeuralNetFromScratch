@@ -1,25 +1,18 @@
-#ifndef _NEURON_HPP_
-#define _NEURON_HPP_
+#pragma once
 
-#include <iostream>
-#include <cmath> // abs() için
-using namespace std;
-
-class Neuron {
+class Neuron
+{
 public:
-    Neuron(double val); 
-    void activate();    
-    void derive();      
+    Neuron(double val);
+    void activate();
+    void derive();
 
-    // Getter fonksiyonları
-    double getVal() { return this->val; }
-    double getActivatedVal() { return this->activatedVal; }
-    double getDerivedVal() { return this->derivedVal; }
+    inline double getVal() { return this->val; }
+    inline double getActivatedVal() { return this->activatedVal; }
+    inline double getDerivedVal() { return this->derivedVal; }
 
 private:
     double val;
     double activatedVal;
     double derivedVal;
 };
-
-#endif
