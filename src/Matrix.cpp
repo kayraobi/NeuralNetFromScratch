@@ -2,13 +2,36 @@
 #include <random>
 #include <iostream>
 
+Matrix *Matrix::transpose()
+{
+	Matrix *m = new Matrix(this->numCols, this->numRows, false);
+	for (int i = 0; i < numRows; i++)
+	{
+		for (int j = 0; j < numCols; j++)
+		{
+			m->setValue(j, i, this->getValue(i, j));
+		}
+	}
+	return m;
+}
+
+void Matrix::setValue(int r, int c, double v)
+{
+	this->values.at(r).at(c) = v;
+}
+
+double Matrix::getValue(int r, int c)
+{
+	return this->values.at(r).at(c);
+}
+
 double Matrix::generateRandomNumber()
 {
 	std::random_device rd;
 	std::mt19937 gen(rd());
 	std::uniform_real_distribution<double> dis(0.0, 1.0);
 
-	return dis(gen); // Rastgele sayıyı döndür
+	return dis(gen);
 }
 
 void Matrix::printMatrix()

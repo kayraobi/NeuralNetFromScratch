@@ -13,6 +13,9 @@ public:
     double generateRandomNumber();
 
     void setValue(int r, int c, double v);
+   
+
+
     double getValue(int r, int c);
 
     void printMatrix();
