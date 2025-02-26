@@ -14,4 +14,6 @@ else()
 endif()
 
 include_directories(include)
-add_executable(NeuralNet src/main.cpp src/Neuron.cpp src/Matrix.cpp)
+add_executable(NeuralNet src/main.cpp src/Neuron.cpp src/Matrix.cpp src/NeuralNetwork.cpp src/Layer.cpp)
+
+set(CMAKE_OSX_ARCHITECTURES "arm64")

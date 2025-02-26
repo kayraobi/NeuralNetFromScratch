@@ -6,6 +6,7 @@ public:
     Neuron(double val);
     void activate();
     void derive();
+    void setVal(double val);
 
     inline double getVal() { return this->val; }
     inline double getActivatedVal() { return this->activatedVal; }

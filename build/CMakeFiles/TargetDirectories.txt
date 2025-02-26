@@ -1,0 +1,3 @@
+/Volumes/KAYRA-1TB/NeuralNetFromScratch/build/CMakeFiles/NeuralNet.dir
+/Volumes/KAYRA-1TB/NeuralNetFromScratch/build/CMakeFiles/edit_cache.dir
+/Volumes/KAYRA-1TB/NeuralNetFromScratch/build/CMakeFiles/rebuild_cache.dir
